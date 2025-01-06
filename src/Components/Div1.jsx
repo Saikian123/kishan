@@ -65,8 +65,7 @@ const VegetableCards = () => {
 
             {/* Price and Weight */}
             <p className="vegetable-details">
-              <strong>Price:</strong> ₹
-              {veg.price} <br />
+              <strong>Price:</strong> ₹ {veg.price} <br />
               <strong>Weight:</strong> {veg.weight}
             </p>
 
