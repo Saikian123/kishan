@@ -1,0 +1,40 @@
+.mobile-grid{
+  box-shadow:  0 -3px 10px 0px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: black;
+  width: 100%;
+  background-color: wheat;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+}
+
+.icon-container{
+  text-align: center;
+
+}
+
+.icon-title{
+  display: block;
+  font-size: 9px;
+}
+.icontop{
+  position: relative;
+}
+
+@media screen and (min-width : 800px){
+  .mobile-grid{
+    display: none;
+  }
+}
+
+@media screen and (max-height : 658px){
+  .mobile-grid{
+    top: 600px;
+  }
+}

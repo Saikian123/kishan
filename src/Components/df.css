@@ -1,0 +1,92 @@
+.explore-category-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  gap: 20px; /* Adds spacing between the cards */
+  justify-content: center; /* Centers the items */
+  padding: 20px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px; /* Ensures consistent width for each card */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-image {
+  width: 100%; /* Ensures the image fills the card width */
+  height: 120px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures images maintain their aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.category-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsiveness */
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .category-card {
+    width: 140px; /* Slightly smaller for tablets */
+  }
+
+  .category-image {
+    height: 110px; /* Adjusts image height for smaller cards */
+  }
+
+  .category-name {
+    font-size: 15px;
+  }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .category-card {
+    width: 120px; /* Adjusts card size for smaller screens */
+    padding: 8px; /* Reduces padding for smaller screens */
+  }
+
+  .category-image {
+    height: 100px; /* Adjusts image height for smaller cards */
+  }
+
+  .category-name {
+    font-size: 14px;
+  }
+}
+
+/* Small phones (max-width: 400px) */
+@media screen and (max-width: 400px) {
+  .category-card {
+    width: 100px; /* Makes the cards even smaller */
+    padding: 6px; /* Further reduces padding */
+  }
+
+  .category-image {
+    height: 80px; /* Further reduces image height */
+  }
+
+  .category-name {
+    font-size: 12px;
+  }
+}
+

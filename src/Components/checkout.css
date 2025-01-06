@@ -1,0 +1,22 @@
+.table-head{
+    font-size: 14px;
+    font-weight: 500;
+    color:#021f12;
+    margin-bottom: 8px;
+}
+.container{
+    background-color: #f8f8f8;
+    padding:20px
+}
+.navigateToHome{
+    display: flex;
+    justify-content: center;
+    color: #021f12;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.NavigateButton{
+    background-color: cadetblue;
+}

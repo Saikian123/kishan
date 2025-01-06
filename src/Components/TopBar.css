@@ -1,0 +1,154 @@
+/* General top bar styles */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: green; /* Entire top bar background green */
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Avoid overflow issues */
+    color: white; /* Default text color for consistency */
+}
+
+/* Logo Styles */
+.logo img {
+    height: 40px;
+}
+
+/* Location Input Styles */
+.location {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Transparent to match the green bar */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.location .input-icon {
+    color: white; /* Icon color */
+    margin-right: 5px;
+}
+
+.location input {
+    border: 1px solid white; /* White border for visibility */
+    background: whitesmoke; /* Match green background */
+    outline: none;
+    color: white; /* Text color */
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    background: whitesmoke; /* Match green background */
+
+    align-items: center;
+    border: 1px solid white; /* White border for visibility */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-bar .input-icon {
+    margin-right: 5px;
+    color: white; /* Icon color */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent; /* Match green background */
+    color: white; /* Text color */
+    width: 200px;
+}
+
+/* Icon Styles */
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: white; /* Default icon color */
+}
+
+.icon:hover {
+    color: #007bff; /* Optional hover effect */
+}
+
+/* Responsive Design */
+
+/* For Large Screens */
+@media (min-width: 1200px) {
+    .top-bar {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .location input,
+    .search-bar input {
+        width: 250px;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+}
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .location,
+    .search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 8px 15px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .location input,
+    .search-bar input {
+        width: 100%;
+    }
+
+    .icons {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+}

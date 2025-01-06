@@ -1,0 +1,39 @@
+.slideshow {
+  position: relative;
+  width: 100%; /* Full width */
+  max: width 950px; ; /* Set maximum width for the slideshow */
+  margin: 0 auto; /* Center align the slideshow */
+  overflow: hidden; /* Prevent content overflow */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  height: 300px; /* Fixed height for the container */
+}
+
+.slide {
+  width: 100%; /* Image width matches the container */
+  height: 100%; /* Ensure image height fills the container */
+  object-fit: cover; /* Crop images to fit without distortion */
+  transition: opacity 1s ease-in-out; /* Smooth transition effect */
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .slideshow {
+    max-width: 600px; /* Adjust max width for tablets */
+    height: 250px; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    max-width: 100%; /* Full width for smaller screens */
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    height: 150px; /* Adjust height for very small screens */
+  }
+}

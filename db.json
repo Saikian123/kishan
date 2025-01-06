@@ -1,0 +1,36 @@
+{
+  "vegetables1": [
+    { "name": "Red Capsicum", "image": "./src/assets/veg1.png", "price": "100", "weight": "500g", "discount": "10%","id":"RedCapsicum" },
+    { "name": "Red Lettuce", "image": "./src/assets/veg2.png", "price": "180", "weight": "400g", "discount": "15%","id":"RedLettuce" },
+    { "name": "Raw Papaya", "image": "./src/assets/veg3.png", "price": "60", "weight": "300g", "discount": "20%","id":"RawPapaya" },
+    { "name": "Cauliflower", "image": "./src/assets/veg4.png", "price": "1.80", "weight": "700g", "discount": "5%","id":"Cauliflower" },
+    { "name": "BabyCorn Organic", "image": "./src/assets/veg5.png", "price": "1.00", "weight": "600g", "discount": "25%","id":"BabyCornOrganic" },
+    { "name": "Fresh Mushroom", "image": "./src/assets/veg6.png", "price": "0.80", "weight": "1kg", "discount": "30%","id":"FreshMushroom" }
+  ],
+  "vegetables2": [
+    { "name": "banana", "image": "./src/assets/ex1.png", "price": "100", "weight": "500g", "discount": "10%","id":"banana" },
+    { "name": "Kiwi", "image": "./src/assets/og2.png", "price": "180", "weight": "400g", "discount": "15%","id":"Kiwi" },
+    { "name": "Tendor coconut", "image": "./src/assets/og3.png", "price": "60", "weight": "300g", "discount": "20%","id":"Tendor" },
+    { "name": "Grapes", "image": "./src/assets/og4.png", "price": "1.80", "weight": "700g", "discount": "5%","id":"Grapes" },
+    { "name": "pomogranate", "image": "./src/assets/og5.png", "price": "1.00", "weight": "600g", "discount": "25%","id":"pomogranate" },
+    { "name": "Coconut", "image": "./src/assets/og6.png", "price": "0.80", "weight": "1kg", "discount": "30%","id":"Coconut" }
+  ],
+  "categories": [
+    { "name": "Fruits & Vegetables", "image": "./src/assets/ex1.png" },
+    { "name": "Pharma & Hygiene", "image": "./src/assets/ex2.png" },
+    { "name": "Baby Care", "image": "./src/assets/ex3.png" },
+    { "name": "Fresh Fruits", "image": "./src/assets/ex4.png" },
+    { "name": "Dry Fruits", "image": "./src/assets/ex5.png" },
+    { "name": "Fish & Seafood", "image": "./src/assets/ex6.png" },
+    { "name": "Bakery", "image": "./src/assets/ex7.png" },
+    { "name": "Dairy & Bread", "image": "./src/assets/ex8.png" },
+    { "name": "Instant Foods", "image": "./src/assets/ex9.png" },
+    { "name": "Eggs", "image": "./src/assets/ex10.png" },
+    { "name": "Chocolates", "image": "./src/assets/ex11.png" },
+    { "name": "Cold Cuts", "image": "./src/assets/ex12.png" },
+    { "name": "Spices", "image": "./src/assets/ex13.png" },
+    { "name": "Spread", "image": "./src/assets/ex14.png" },
+    { "name": "Rice", "image": "./src/assets/ex15.png" },
+    { "name": "Prawns", "image": "./src/assets/ex16.png" }
+  ]
+}
