@@ -40,22 +40,22 @@ const Checkout=()=>{
                 <div className="conatiner" key={index}>
                   
                     <div className="row">
-                        <div className="col-sm-1 co1-1">
+                        <div className="col-sm-1 co1-1 checkImage"> 
                             <img src={item.image} alt={item.name} style={{width:'100%'}}/>
-                        </div>
+                         </div>
                         <div className="col-sm-3 co1-2">
                             <div className="row table-head">{item.name}</div>
                             <div className="row table-head">Sold by </div>
                             <div className="row">Qty-{item.weight}</div>
                         </div>
-                        <div className="col-sm-1 co1-1">
+                        <div className="col-sm-3 co1-2">
                             <div className="row table-head">Price</div>
                             <div className="row table-head">₹{item.price} </div>
                             <div className="row">you Save</div>
                         </div>
 
                         <div className="col-sm-1 co1-1">
-                        <div className="row">Qty</div>
+                        <div className="row table-head">Qty</div>
                         <div className="row">
                                 <div className="col-sm-1 co1-1" onClick={()=> removingFromCart(item)}> <TiMinus />  </div>
                                 <div className="col-sm-1 co1-1">{item.quantity}</div>
@@ -64,12 +64,12 @@ const Checkout=()=>{
                         </div>
                         </div>
 
-                        <div className="col-sm-1 co1-1">
+                        <div className="col-sm-1 co1-2">
                             <div className=" row table-head">Total</div>
                             <div className="row table-head"> ₹
                             {(item.quantity)*(item.price)}</div>
                         </div>
-                        <div className="col">
+                        <div className="col-sm-1  col-2">
                             <div className="row table-head">Action </div>
                             <div className="row" style={{color:'red',cursor:"pointer"}} onClick={()=>deletingFromCart(item)}>Remove</div>
                         </div>
